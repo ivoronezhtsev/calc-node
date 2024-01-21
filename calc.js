@@ -4,14 +4,10 @@ const operand2 = process.argv[4]
 
 
 let result;
-if(operator === "+") {
-    result = +operand1 + +operand2
-} else if(operator === "-") {
-    result = +operand1 - +operand2
-} else if( operator === "*") {
-    result = +operand1 * +operand2
-} else if(operator === "/") {
-    result = +operand1 / operand2
+switch (operator) {
+    case "+": result = +operand1 + +operand2; break;
+    case "-": result = +operand1 - +operand2; break;
+    case "*": result = +operand1 * operand2; break;
+    case "/": result = +operand1 / operand2; break;
 }
 console.log(operand1 + " " + operator +" " + operand2 + " = " + result)
-
