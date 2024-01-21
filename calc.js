@@ -9,4 +9,4 @@ switch (operator) {
     case "*": result = +operand1 * operand2; break;
     case "/": result = +operand1 / operand2; break;
 }
-console.log(operand1 + " " + operator +" " + operand2 + " = " + result)
+console.log(operand1 + " " + operator + " " + operand2 + " = " + result)
